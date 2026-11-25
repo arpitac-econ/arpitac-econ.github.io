@@ -70,6 +70,15 @@
   .card h3{font-size:18px;margin-bottom:6px;color:var(--accent-dark)}
   .card p{margin:0;font-size:15px;color:var(--muted)}
 
+  /* compact expandable examples beneath each research theme */
+  .theme-papers{margin-top:14px;padding-top:10px;border-top:1px solid var(--line)}
+  .theme-papers summary{color:var(--accent);font-size:14px;font-weight:600;cursor:pointer}
+  .theme-papers summary:hover{text-decoration:underline}
+  .theme-papers ul{list-style:none;padding:0;margin:10px 0 0}
+  .theme-papers li{margin-bottom:10px;font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+  .theme-papers li:last-child{margin-bottom:0}
+  .theme-papers .paper-kind{display:block;color:var(--muted);font-size:12px;letter-spacing:.02em}
+
   /* research */
   .paper{padding:16px 0;border-bottom:1px solid var(--line)}
   .paper:last-child{border-bottom:0}
@@ -165,12 +174,52 @@
 
   <div class="band soft"><div class="wrap">
     <h2 class="sec">Research themes</h2>
-    <p class="lede">Papers in each theme are listed on the <a href="#research">Research</a> page.</p>
+    <p class="lede">Explore selected papers under each theme. For the complete list, see <a href="#research">Research</a>.</p>
     <div class="cards">
-      <div class="card"><h3>International spillovers</h3><p>US monetary policy, quantitative easing and uncertainty shocks; global commodity and price shocks.</p></div>
-      <div class="card"><h3>Inequality &amp; mobility</h3><p>Distributional effects of price shocks, consumption insurance, wage inequality and intergenerational mobility.</p></div>
-      <div class="card"><h3>Trade &amp; domestic policy</h3><p>Minimum wages, tariffs, comparative advantage and the political economy of fiscal policy.</p></div>
-      <div class="card"><h3>Multi-product firms</h3><p>Markups, product quality, productivity and responses to exchange rates and import competition.</p></div>
+      <div class="card">
+        <h3>International spillovers</h3>
+        <p>US monetary policy, quantitative easing and uncertainty shocks; global commodity and price shocks.</p>
+        <details class="theme-papers">
+          <summary>Selected research</summary>
+          <ul>
+            <li><span class="paper-kind">Published paper</span><a href="https://drive.google.com/file/d/1eWuIMjFpo4nuN6J2czI_VwHA7UNGnxPx/view">Global Spillover Effects of US Uncertainty</a></li>
+            <li><span class="paper-kind">Working paper</span><a href="https://drive.google.com/file/d/1XUS33_JSw6gQw5kZ3By1b2mrt3-xs7qR/view">Food, Fuel, and Facts: Distributional Effects of Global Price Shocks</a></li>
+          </ul>
+        </details>
+      </div>
+      <div class="card">
+        <h3>Inequality &amp; mobility</h3>
+        <p>Distributional effects of price shocks, consumption insurance, wage inequality and intergenerational mobility.</p>
+        <details class="theme-papers">
+          <summary>Selected research</summary>
+          <ul>
+            <li><span class="paper-kind">Published paper</span><a href="https://drive.google.com/file/d/1ehnI4W9RukYqphyAEcpLbcQixloKtIJk/view">Trade Liberalization and Intergenerational Occupational Mobility in Urban India</a></li>
+            <li><span class="paper-kind">Working paper</span><a href="https://drive.google.com/file/d/1XUS33_JSw6gQw5kZ3By1b2mrt3-xs7qR/view">Food, Fuel, and Facts: Distributional Effects of Global Price Shocks</a></li>
+          </ul>
+        </details>
+      </div>
+      <div class="card">
+        <h3>Trade &amp; domestic policy</h3>
+        <p>Minimum wages, tariffs, comparative advantage and the political economy of fiscal policy.</p>
+        <details class="theme-papers">
+          <summary>Selected research</summary>
+          <ul>
+            <li><span class="paper-kind">Published paper</span><a href="https://drive.google.com/file/d/1eQGPNKKC0Q4rj1NIJnkNcB3Fu48zTu-6/view">Endogenous Comparative Advantage, Gains from Trade and Symmetry-Breaking</a></li>
+            <li><span class="paper-kind">Working paper</span><a href="https://drive.google.com/file/d/1CKNBUO7ZEdRevMQ4Bf60p3NCumasIsrm/view">Optimal Input Tariffs in Oligopoly</a></li>
+          </ul>
+        </details>
+      </div>
+      <div class="card">
+        <h3>Multi-product firms</h3>
+        <p>Markups, product quality, productivity and responses to exchange rates and import competition.</p>
+        <details class="theme-papers">
+          <summary>Selected research</summary>
+          <ul>
+            <li><span class="paper-kind">Published paper</span><a href="https://drive.google.com/file/d/1GNcVxWZqkBd64LRvAjrNXJ4Arl1ZOGyu/view">Multi-Product Firms and Exchange Rate Fluctuations</a></li>
+            <li><span class="paper-kind">Working paper</span><a href="https://drive.google.com/file/d/1v1DMzbuOFH9xilnfcafxK0yE-ra2N9md/view">Productivity and Quality of Multi-Product Firms</a></li>
+          </ul>
+        </details>
+      </div>
     </div>
   </div></div>
 </section>
