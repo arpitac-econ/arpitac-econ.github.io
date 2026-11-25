@@ -58,10 +58,13 @@
   .disclaimer{margin-top:22px;padding:12px 16px;border-left:3px solid var(--accent);background:#fff;
               font-size:14.5px;color:var(--muted);border-radius:0 8px 8px 0}
   .news{list-style:none;margin:0;padding:0}
-  .news li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .news li{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
   .news li:last-child{border-bottom:0}
-  .tag{flex:none;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-       color:#fff;background:var(--accent);border-radius:4px;padding:2px 8px;height:fit-content;margin-top:3px}
+  .tag{flex:none;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+       color:var(--accent-dark);background:var(--tint);border-radius:4px;padding:3px 8px;margin-top:2px}
+  .news-copy{min-width:0}
+  .news-title{font-weight:600}
+  .news-detail{display:block;color:var(--muted);font-size:15px;margin-top:2px}
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
   .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
   .card h3{font-size:18px;margin-bottom:6px;color:var(--accent-dark)}
@@ -141,11 +144,22 @@
 
   <div class="band"><div class="wrap">
     <h2 class="sec">News</h2>
-    <!-- NEWS: keep about 3 items. To add one, copy a whole <li>...</li> line and edit it. Delete the oldest. -->
+    <!-- NEWS: keep just the most recent announcements. Add dates when verified. -->
     <ul class="news">
-      <li><span class="tag">New</span><span>First version of <a href="https://drive.google.com/file/d/1CKNBUO7ZEdRevMQ4Bf60p3NCumasIsrm/view">“Optimal Input Tariffs in Oligopoly”</a></span></li>
-      <li><span class="tag">New</span><span>Updated version of <a href="https://drive.google.com/file/d/1v1DMzbuOFH9xilnfcafxK0yE-ra2N9md/view">“Productivity and Quality of Multi-Product Firms”</a> (revise and resubmit, <i>AEJ: Microeconomics</i>)</span></li>
-      <li><span class="tag">New</span><span>Updated version of <a href="https://drive.google.com/file/d/1XUS33_JSw6gQw5kZ3By1b2mrt3-xs7qR/view">“Food, Fuel, and Facts: Distributional Effects of Global Price Shocks”</a> (reject and resubmit, <i>Review of Economic Studies</i>)</span></li>
+      <li>
+        <span class="tag">New paper</span>
+        <span class="news-copy">
+          <a class="news-title" href="https://drive.google.com/file/d/1CKNBUO7ZEdRevMQ4Bf60p3NCumasIsrm/view">Optimal Input Tariffs in Oligopoly</a>
+          <span class="news-detail">First working-paper version</span>
+        </span>
+      </li>
+      <li>
+        <span class="tag">Revised paper</span>
+        <span class="news-copy">
+          <a class="news-title" href="https://drive.google.com/file/d/1v1DMzbuOFH9xilnfcafxK0yE-ra2N9md/view">Productivity and Quality of Multi-Product Firms</a>
+          <span class="news-detail">Revise and resubmit, <i>AEJ: Microeconomics</i></span>
+        </span>
+      </li>
     </ul>
   </div></div>
 
