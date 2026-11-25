@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Personal website of Arpita Chatterjee. See README.md for how to update it. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arpita Chatterjee — Economist</title>
+<meta name="description" content="Arpita Chatterjee, Senior Economist at the Federal Reserve Board. Research in international economics, macroeconomics and applied econometrics.">
+<meta property="og:title" content="Arpita Chatterjee — Economist">
+<meta property="og:description" content="Senior Economist, Federal Reserve Board. Research in international economics and macroeconomics.">
+<meta property="og:image" content="photo.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D63B8'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='bold' fill='white' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.className='js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#1D63B8; --accent-dark:#164C8E; --tint:#EEF4FB; --tint2:#F7F9FC;
+    --ink:#17202A; --muted:#5B6773; --line:#DDE4EC; --paper:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font:17px/1.6 "Source Sans 3",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;line-height:1.25;margin:0}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+
+
+  /* site header */
+  header.site{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:14px}
+  .brand{font-family:"Source Serif 4",Georgia,serif;font-size:22px;font-weight:600;color:var(--ink)}
+  nav.tabs{display:flex;gap:4px;flex-wrap:wrap}
+  nav.tabs a{color:var(--muted);padding:6px 12px;border-radius:999px;font-weight:600;font-size:15px}
+  nav.tabs a:hover{text-decoration:none;color:var(--accent);background:var(--tint)}
+  nav.tabs a.on{color:var(--accent);background:var(--tint)}
+
+  .js section.page{display:none}
+  .js section.page.on{display:block}
+  .band{padding-block:48px}
+  .band.tint{background:var(--tint)}
+  .band.soft{background:var(--tint2)}
+  h2.sec{font-size:28px;margin-bottom:6px}
+  .lede{color:var(--muted);margin:0 0 24px}
+
+  /* home */
+  .hero{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start}
+  .hero img{width:240px;height:240px;border-radius:50%;object-fit:cover;box-shadow:0 6px 24px rgba(23,32,42,.14)}
+  .hero h1{font-size:40px;margin-bottom:4px}
+  .role{color:var(--accent-dark);font-weight:600;margin:0 0 16px}
+  .hero p{margin:0 0 14px}
+  .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+  .btn{display:inline-block;padding:9px 18px;border-radius:999px;border:1.5px solid var(--accent);
+       font-weight:600;font-size:15px}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn:hover{text-decoration:none;filter:brightness(1.08)}
+  .disclaimer{margin-top:22px;padding:12px 16px;border-left:3px solid var(--accent);background:#fff;
+              font-size:14.5px;color:var(--muted);border-radius:0 8px 8px 0}
+  .news{list-style:none;margin:0;padding:0}
+  .news li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .news li:last-child{border-bottom:0}
+  .tag{flex:none;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+       color:#fff;background:var(--accent);border-radius:4px;padding:2px 8px;height:fit-content;margin-top:3px}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{font-size:18px;margin-bottom:6px;color:var(--accent-dark)}
+  .card p{margin:0;font-size:15px;color:var(--muted)}
+
+  /* research */
+  .paper{padding:16px 0;border-bottom:1px solid var(--line)}
+  .paper:last-child{border-bottom:0}
+  .ptitle{font-family:"Source Serif 4",Georgia,serif;font-size:19px;font-weight:600}
+  .ptitle a{color:var(--ink)}
+  .ptitle a:hover{color:var(--accent)}
+  .meta{color:var(--muted);font-size:15.5px}
+  .outlet{font-style:italic;color:var(--ink)}
+  .status{color:var(--accent-dark);font-weight:600}
+  .links{font-size:14.5px;margin-top:2px}
+  .links a+a::before{content:"·";color:var(--line);margin:0 8px}
+  .year{float:right;color:var(--muted);font-size:15px;margin-left:12px}
+  h3.sub{font-size:22px;margin:36px 0 4px}
+  h3.sub:first-child{margin-top:0}
+
+  /* teaching */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .course h3{font-size:17px;color:var(--ink)}
+  .course .when{color:var(--accent-dark);font-weight:600;font-size:14px}
+  .course p{margin:4px 0 0}
+  .people{list-style:none;padding:0;margin:0}
+  .people li{padding:10px 0;border-bottom:1px solid var(--line)}
+  .people b{font-weight:600}
+  .people .meta{display:block}
+
+  .quote{font-family:"Source Serif 4",Georgia,serif;font-size:18px;margin:0 0 18px;padding-left:16px;border-left:3px solid var(--accent)}
+  .quote span{display:block;font-family:"Source Sans 3",sans-serif;font-size:14px;color:var(--muted);margin-top:4px}
+
+  footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer.site .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+
+  @media (max-width:820px){
+    .hero{grid-template-columns:1fr;gap:20px}
+    .hero img{width:180px;height:180px}
+    .cards{grid-template-columns:1fr 1fr}
+    .grid2{grid-template-columns:1fr}
+  }
+  @media (max-width:480px){ .cards{grid-template-columns:1fr} .hero h1{font-size:32px} }
+</style>
+</head>
+<body>
+
+<header class="site"><div class="wrap">
+  <div class="brand">Arpita Chatterjee</div>
+  <nav class="tabs">
+    <a href="#home">Home</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching &amp; Supervision</a>
+    <a href="#outreach">Policy &amp; Outreach</a>
+  </nav>
+</div></header>
+
+<!-- ======================= HOME ======================= -->
+<section class="page" id="home">
+  <div class="band tint"><div class="wrap hero">
+    <img src="photo.jpg" alt="Arpita Chatterjee">
+    <div>
+      <h1>Arpita Chatterjee</h1>
+      <p class="role">Senior Economist, International Finance Division, Federal Reserve Board</p>
+      <p>I am a Senior Economist at the Federal Reserve Board, where I work on energy, commodity markets and trade prices. Before joining the Board in 2024, I was an Associate Professor of Economics at UNSW Sydney and at the Indian Institute of Management Bangalore. I received my PhD in Economics from Princeton University in 2010.</p>
+      <p>My research is in international economics and macroeconomics, with a strong applied-econometrics component. I study how macroeconomic and trade policies work in advanced and emerging economies and how they interact with globalization.</p>
+      <div class="btns">
+        <a class="btn primary" href="cv.pdf">Curriculum Vitae (PDF)</a>
+        <a class="btn" href="#research">Research</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=o4c4TlEAAAAJ">Google Scholar</a>
+        <a class="btn" href="mailto:chatterjee.econ@gmail.com">Email</a>
+      </div>
+      <div class="disclaimer">This is my personal website. The views expressed here are solely my own and should not be interpreted as reflecting the views of the Board of Governors of the Federal Reserve System or of anyone else associated with the Federal Reserve System.</div>
+    </div>
+  </div></div>
+
+  <div class="band"><div class="wrap">
+    <h2 class="sec">News</h2>
+    <!-- NEWS: keep about 3 items. To add one, copy a whole <li>...</li> line and edit it. Delete the oldest. -->
+    <ul class="news">
+      <li><span class="tag">New</span><span>First version of <a href="https://drive.google.com/file/d/1CKNBUO7ZEdRevMQ4Bf60p3NCumasIsrm/view">“Optimal Input Tariffs in Oligopoly”</a></span></li>
+      <li><span class="tag">New</span><span>Updated version of <a href="https://drive.google.com/file/d/1v1DMzbuOFH9xilnfcafxK0yE-ra2N9md/view">“Productivity and Quality of Multi-Product Firms”</a> (revise and resubmit, <i>AEJ: Microeconomics</i>)</span></li>
+      <li><span class="tag">New</span><span>Updated version of <a href="https://drive.google.com/file/d/1XUS33_JSw6gQw5kZ3By1b2mrt3-xs7qR/view">“Food, Fuel, and Facts: Distributional Effects of Global Price Shocks”</a> (reject and resubmit, <i>Review of Economic Studies</i>)</span></li>
+    </ul>
+  </div></div>
+
+  <div class="band soft"><div class="wrap">
+    <h2 class="sec">Research themes</h2>
+    <p class="lede">Papers in each theme are listed on the <a href="#research">Research</a> page.</p>
+    <div class="cards">
+      <div class="card"><h3>International spillovers</h3><p>US monetary policy, quantitative easing and uncertainty shocks; global commodity and price shocks.</p></div>
+      <div class="card"><h3>Inequality &amp; mobility</h3><p>Distributional effects of price shocks, consumption insurance, wage inequality and intergenerational mobility.</p></div>
+      <div class="card"><h3>Trade &amp; domestic policy</h3><p>Minimum wages, tariffs, comparative advantage and the political economy of fiscal policy.</p></div>
+      <div class="card"><h3>Multi-product firms</h3><p>Markups, product quality, productivity and responses to exchange rates and import competition.</p></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ======================= RESEARCH ======================= -->
+<section class="page" id="research">
+  <div class="band"><div class="wrap">
+    <h2 class="sec">Research</h2>
+    <p class="lede"><a href="https://scholar.google.com/citations?user=o4c4TlEAAAAJ">Google Scholar</a> · <a href="https://ssrn.com/author=1832774">SSRN</a> · <a href="https://ideas.repec.org/f/pch881.html">IDEAS/RePEc</a></p>
+
+    <h3 class="sub">Working papers</h3>
+    <!-- WORKING PAPERS: each paper is one <div class="paper"> ... </div> block (3-4 lines).
+         To add a paper, copy a whole block, paste it where you want it, and edit the title, link and coauthors.
+         The "links" line is optional; delete it if not needed. -->
+    <div class="paper"><div class="ptitle"><a href="https://drive.google.com/file/d/1XUS33_JSw6gQw5kZ3By1b2mrt3-xs7qR/view">Food, Fuel, and Facts: Distributional Effects of Global Price Shocks</a></div>
+      <div class="meta">with Saroj Bhattarai and Gautham Udupa · <span class="status">Reject and resubmit, <i>Review of Economic Studies</i></span></div>
+      <div class="links"><a href="https://doi.org/10.17016/IFDP.2025.1414">Fed IFDP No. 1414</a></div></div>
+    <div class="paper"><div class="ptitle"><a href="https://drive.google.com/file/d/1v1DMzbuOFH9xilnfcafxK0yE-ra2N9md/view">Productivity and Quality of Multi-Product Firms</a></div>
+      <div class="meta">with Mauro Caselli and Shengyu Li · <span class="status">Revise and resubmit, <i>American Economic Journal: Microeconomics</i></span></div>
+      <div class="links"><a href="https://doi.org/10.17016/IFDP.2026.1430">Fed IFDP No. 1430</a></div></div>
+    <div class="paper"><div class="ptitle"><a href="https://drive.google.com/file/d/1CKNBUO7ZEdRevMQ4Bf60p3NCumasIsrm/view">Optimal Input Tariffs in Oligopoly</a></div>
+      <div class="meta">with Arghya Ghosh</div></div>
+    <div class="paper"><div class="ptitle"><a href="https://drive.google.com/file/d/1fxs35Fkpe3IAnsgqy7ByyV-POt-NEU4p/view">Competition, Productivity and Product Mix: Effect of China on Mexican Plants</a></div>
+      <div class="meta">with Mauro Caselli and Scott French</div></div>
+    <div class="paper"><div class="ptitle">International Transmission of Monetary Policy Surprises</div>
+      <div class="meta">with Saroj Bhattarai and Woong Yong Park</div>
+      <div class="links"><a href="https://www.aof.org.hk/uploads/publication/471/wp201717.pdf">Earlier version: “US Monetary Policy Spillovers” (HKIMR WP)</a></div></div>
+    <div class="paper"><div class="ptitle">Heterogeneity in Consumer Behaviour: Micro Evidence and Macro Implications</div>
+      <div class="meta">with Anand Chopra, Urvi Neelakantan and Gautham Udupa</div></div>
+    <div class="paper"><div class="ptitle"><a href="https://dx.doi.org/10.2139/ssrn.5554379">Occupational Mediation of Intergenerational Income Mobility</a></div>
+      <div class="meta">with Yuancheng Han, Aarti Singh and Satoshi Tanaka</div></div>
+    <div class="paper"><div class="ptitle">Political Origins of Fiscal Dominance</div>
+      <div class="meta">with Nirvana Mitra and Anindo Sarkar</div></div>
+
+    <h3 class="sub">Publications</h3>
+    <!-- PUBLICATIONS: newest first. When a working paper is published, cut its block from above,
+         paste it here, add <span class="year">2027</span> at the start and the journal name in <span class="outlet">...</span>. -->
+    <div class="paper"><span class="year">2026</span><div class="ptitle"><a href="https://drive.google.com/file/d/1izymFgU176iPBeci3uKOD1EC9mEHH0xH/view">Trade and Selection with Heterogeneous Firms and Perfect Competition</a></div>
+      <div class="meta">with Xue Bai, Kala Krishna and Hong Ma · <span class="outlet">Review of International Economics</span></div>
+      <div class="links"><a href="https://doi.org/10.1111/roie.70051">Journal</a></div></div>
+    <div class="paper"><span class="year">2024</span><div class="ptitle"><a href="https://doi.org/10.1111/roie.12738">Impact of China on Commodity Exporters</a></div>
+      <div class="meta">with Richa Saraf · <span class="outlet">Review of International Economics</span></div>
+      <div class="links"><a href="https://www.ceda.com.au/Digital-hub/Blogs/CEDA-Blog/November-2017/Impact-of-China-on-commodity-exporters">CEDA blog</a><a href="http://www.allaboutalpha.com/blog/2017/10/29/china-and-a-reduced-form-bayesian-var/">Media</a></div></div>
+    <div class="paper"><span class="year">2021</span><div class="ptitle"><a href="https://drive.google.com/file/d/1t6nEG3RCHd-Q0z6dCkKPNq1rWxyr2I1r/view">Trade and Minimum Wages in General Equilibrium: Theory and Evidence</a></div>
+      <div class="meta">with Xue Bai, Kala Krishna and Hong Ma · <span class="outlet">Journal of International Economics</span></div>
+      <div class="links"><a href="https://drive.google.com/file/d/19hzS11LI1iZ5yPAqeD6qc_-ow62OhInw/view">Appendix</a><a href="http://www.nber.org/papers/w24456">NBER WP 24456</a><a href="https://doi.org/10.1016/j.jinteco.2021.103535">Journal</a></div></div>
+    <div class="paper"><span class="year">2021</span><div class="ptitle"><a href="https://drive.google.com/file/d/1pbfLetLJJktnuqL5PgNV4KIdmc5rIk3r/view">Effects of US Quantitative Easing on Emerging Market Economies</a></div>
+      <div class="meta">with Saroj Bhattarai and Woong Yong Park · <span class="outlet">Journal of Economic Dynamics and Control</span></div>
+      <div class="links"><a href="https://drive.google.com/file/d/1MlNZvxwwOD-6Uj6QSJzvJIiPO_BtNwVV/view">Online appendix</a><a href="https://drive.google.com/file/d/1US_0lcgNDT_jfLC-Sp_H1HTd-jj61BQ8/view">Data appendix</a><a href="https://drive.google.com/drive/folders/1-RDW3WA_4t_H_9HUtZixJUWkxbFwrlMR">Code</a><a href="https://www.brookings.edu/blog/up-front/2015/11/19/hutchins-roundup-tax-evasion-qe-and-more/">Media</a></div></div>
+    <div class="paper"><span class="year">2020</span><div class="ptitle"><a href="https://drive.google.com/file/d/1dc3IbqxkCYPiTiecAJ7p0H84oUc8-dBF/view">Estimating Household Consumption Insurance</a></div>
+      <div class="meta">with James Morley and Aarti Singh · <span class="outlet">Journal of Applied Econometrics</span></div>
+      <div class="links"><a href="https://drive.google.com/file/d/1vyEVHGdnvHoYr-SHRNWYcF0Qw-4fqR7G/view">Online appendix</a><a href="http://qed.econ.queensu.ca/jae/datasets/chatterjee001/">Code</a><a href="https://doi.org/10.1002/jae.2820">Journal</a></div></div>
+    <div class="paper"><span class="year">2020</span><div class="ptitle"><a href="https://drive.google.com/file/d/1eWuIMjFpo4nuN6J2czI_VwHA7UNGnxPx/view">Global Spillover Effects of US Uncertainty</a></div>
+      <div class="meta">with Saroj Bhattarai and Woong Yong Park · <span class="outlet">Journal of Monetary Economics</span></div>
+      <div class="links"><a href="https://drive.google.com/file/d/1DHhH2v__mQKwy4xYjiuF41cKrnBaNMPZ/view">Online appendix</a><a href="https://drive.google.com/file/d/1HEUveTi00DL2Vb7AC2RF3A4BS2ISg0DD/view">Data appendix</a><a href="https://doi.org/10.1016/j.jmoneco.2019.05.008">Journal</a></div></div>
+    <div class="paper"><span class="year">2017</span><div class="ptitle"><a href="https://drive.google.com/file/d/1ehnI4W9RukYqphyAEcpLbcQixloKtIJk/view">Trade Liberalization and Intergenerational Occupational Mobility in Urban India</a></div>
+      <div class="meta">with Reshad Ahsan · <span class="outlet">Journal of International Economics</span></div>
+      <div class="links"><a href="https://drive.google.com/file/d/1Z-tsTc8pm-jsRpMK1R_Mmh-vk1ZXUxk7/view">Online appendix</a><a href="http://www.ideasforindia.in/article.aspx?article_id=1614">Ideas for India</a><a href="https://www.businessthink.unsw.edu.au/pages/do-workers-in-india-benefit-from-liberalised-trade.aspx/">UNSW BusinessThink</a><a href="http://blogs.exeter.ac.uk/insted/2018/03/30/trade-liberalization-and-intergenerational-occupational-mobility-in-urban-india/">InsTED</a></div></div>
+    <div class="paper"><span class="year">2017</span><div class="ptitle"><a href="https://drive.google.com/file/d/1eQGPNKKC0Q4rj1NIJnkNcB3Fu48zTu-6/view">Endogenous Comparative Advantage, Gains from Trade and Symmetry-Breaking</a></div>
+      <div class="meta"><span class="outlet">Journal of International Economics</span> · earlier version: “Why Do Similar Countries Choose Different Policies? Endogenous Comparative Advantage and Welfare Gains”</div>
+      <div class="links"><a href="https://drive.google.com/file/d/1guUplykKrqohXXuUSzu1bezBMY3i4P-c/view">Online appendix</a></div></div>
+    <div class="paper"><span class="year">2017</span><div class="ptitle"><a href="https://drive.google.com/file/d/1G64iFMzH4VbDUaGxMT2FCmFgJ56WTjlI/view">Multi-Product Exporters, Variable Markups and Exchange Rate Fluctuations</a></div>
+      <div class="meta">with Mauro Caselli and Alan Woodland · <span class="outlet">Canadian Journal of Economics</span></div></div>
+    <div class="paper"><span class="year">2016</span><div class="ptitle"><a href="https://drive.google.com/file/d/1S6QTemQM5-caoOoGBDRcVVHTsV-RA9Qz/view">Globalization and Monetary Policy Comovement: International Evidence</a></div>
+      <div class="meta"><span class="outlet">Journal of International Money and Finance</span></div></div>
+    <div class="paper"><span class="year">2016</span><div class="ptitle"><a href="https://drive.google.com/file/d/1YMlEsGUe8vWMXHTJ8V78scqUvE5PN-mG/view">Understanding Wage Inequality in Australia</a></div>
+      <div class="meta">with Aarti Singh and Tahlee Stone · <span class="outlet">Economic Record</span></div></div>
+    <div class="paper"><span class="year">2013</span><div class="ptitle"><a href="https://drive.google.com/file/d/1GNcVxWZqkBd64LRvAjrNXJ4Arl1ZOGyu/view">Multi-Product Firms and Exchange Rate Fluctuations</a></div>
+      <div class="meta">with Rafael Dix-Carneiro and Jade Vichyanond · <span class="outlet">American Economic Journal: Economic Policy</span></div></div>
+
+    <h3 class="sub">Book chapter</h3>
+    <div class="paper"><span class="year">Forthcoming</span><div class="ptitle">Minimum Wages, Productivity and Trade: Evidence from Asia</div>
+      <div class="meta">with Xue Bai and Kala Krishna · <span class="outlet">Oxford Handbook of International Economics for Asia and the Global Economy</span></div></div>
+
+    <h3 class="sub">Earlier working paper</h3>
+    <div class="paper"><div class="ptitle">Is Better Access to Markets a Substitute for Educated Parents? Evidence from Rural India</div>
+      <div class="meta">with Reshad Ahsan and Shahe Emran</div></div>
+  </div></div>
+</section>
+
+<!-- ======================= TEACHING ======================= -->
+<section class="page" id="teaching">
+  <div class="band"><div class="wrap">
+    <h2 class="sec">Teaching</h2>
+    <p class="lede">IIM Bangalore (2022–2023) and UNSW Sydney (2011–2021).</p>
+    <div class="grid2">
+      <div class="card course"><span class="when">IIM Bangalore · 2022, 2023</span><h3>Macroeconomics (PhD core)</h3><p class="meta">Core macroeconomics for PhD students in economics.</p><div class="links"><a href="https://drive.google.com/file/d/1oBJh9YnaIxMvy7ssjTfMi-ktQdcbnj9p/view">Syllabus</a></div></div>
+      <div class="card course"><span class="when">IIM Bangalore · 2022, 2023</span><h3>Macroeconomics (MBA core)</h3><p class="meta">Core macroeconomics for the flagship MBA program.</p><div class="links"><a href="https://drive.google.com/file/d/1Zcl_ai03Cccyd7QQ3Pc5ULvsOH7WGdsH/view">Syllabus</a></div></div>
+      <div class="card course"><span class="when">UNSW · 2019–2021</span><h3>Macroeconomic Theory</h3><p class="meta">Macroeconomic theory for PhD and Masters students.</p><div class="links"><a href="https://www.business.unsw.edu.au/degrees-courses/course-outlines/archives/ECON7002-2020-T2">Syllabus</a></div></div>
+      <div class="card course"><span class="when">UNSW · 2013, 2015–17, 2020–21</span><h3>Applied Macroeconometrics</h3><p class="meta">Applied time-series econometrics for PhD, Masters and Honours students.</p><div class="links"><a href="https://www.business.unsw.edu.au/degrees-courses/course-outlines/archives/ECON7204-2020-T2">Syllabus</a></div></div>
+      <div class="card course"><span class="when">UNSW · 2016–17, 2019–21</span><h3>International Trade Theory and Policy</h3><p class="meta">Third-year undergraduate course.</p><div class="links"><a href="https://www.business.unsw.edu.au/degrees-courses/course-outlines/archives/ECON3116-2020-T2">Syllabus</a></div></div>
+      <div class="card course"><span class="when">UNSW · 2011–13, 2015–17, 2019</span><h3>Advanced International Trade</h3><p class="meta">International trade for PhD, Masters and Honours students.</p></div>
+      <div class="card course"><span class="when">UNSW · 2011–2016</span><h3>Quantitative Analysis for Business and Economics</h3><p class="meta">Quantitative methods for first-year undergraduates.</p></div>
+      <div class="card course"><span class="when">UNSW · 2011</span><h3>Advanced Economic Analysis</h3><p class="meta">Microeconomic theory for Honours students.</p></div>
+    </div>
+  </div></div>
+
+  <div class="band soft"><div class="wrap">
+    <h2 class="sec">Supervision</h2>
+    <p class="lede">As main supervisor at UNSW Sydney. First job after graduation in brackets.</p>
+    <div class="grid2">
+      <div>
+        <h3 class="sub">PhD</h3>
+        <ul class="people">
+          <li><b>Thi Hang Banh</b> <span class="meta">Effects of the Rise of China on Developing Economies · [Postdoctoral fellow, NUS public policy school]</span></li>
+          <li><b>Akashlina Arno</b> <span class="meta">Environmental Policy and Firm Dynamics in India · [Business NSW]</span></li>
+        </ul>
+        <h3 class="sub">M.Phil.</h3>
+        <ul class="people">
+          <li><b>Shreeyesh Menon</b> <span class="meta">Monetary Policy and the Yield Curve · [PhD program, UT Austin]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">Honours</h3>
+        <ul class="people">
+          <li><b>Kieren Jackson</b>, 2022 <span class="meta">Monetary Policy and Wealth Inequality · [Treasury]</span></li>
+          <li><b>Chuan Jiang</b>, 2021, University Medal <span class="meta">Evaluating the Effectiveness of Discretionary Fiscal Policy in Australia · [Brattle Group]</span></li>
+          <li><b>Carol Kong</b>, 2019 <span class="meta">The Effects of Monetary Policy on the Australian Housing Market · [Commonwealth Bank]</span></li>
+          <li><b>Vanty Tang</b>, 2015 <span class="meta">Effects of Chinese Import Competition on Local Labor Markets in Australia · [NSW Treasury]</span></li>
+          <li><b>Tahlee Stone</b>, 2013 <span class="meta">Life-cycle Inequality and Wage Dynamics in Australia · [Reserve Bank of Australia]</span></li>
+        </ul>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ======================= OUTREACH ======================= -->
+<section class="page" id="outreach">
+  <div class="band"><div class="wrap">
+    <h2 class="sec">Policy writing &amp; media</h2>
+    <ul class="people">
+      <li><b>Food, Fuel, and Facts: Distributional Effects of Global Price Shocks</b> (with Saroj Bhattarai and Gautham Udupa) <span class="meta"><i>Ideas for India</i>, June 2024</span></li>
+      <li><b>Panelist: Is the Dollar’s Supremacy under Challenge?</b> <span class="meta"><i>CGTN Radio</i>, July 2023</span></li>
+      <li><b><a href="https://newsroom.unsw.edu.au/news/business-law/how-reduce-offshore-supply-chain-risks-and-create-onshore-manufacturing">Onshore Manufacturing in Australia</a></b> <span class="meta"><i>UNSW Newsroom</i>, August 2020</span></li>
+      <li><b><a href="http://blogs.exeter.ac.uk/insted/2018/03/30/trade-liberalization-and-intergenerational-occupational-mobility-in-urban-india/">Trade Liberalization and Intergenerational Occupational Mobility in Urban India</a></b> (with Reshad Ahsan) <span class="meta"><i>InsTED</i>, March 2018; <a href="http://www.ideasforindia.in/article.aspx?article_id=1614"><i>Ideas for India</i></a>, March 2016</span></li>
+      <li><b><a href="https://www.ceda.com.au/Digital-hub/Blogs/CEDA-Blog/November-2017/Impact-of-China-on-commodity-exporters">Impact of China on Commodity Exporters</a></b> <span class="meta">Committee for Economic Development of Australia (CEDA), November 2017</span></li>
+    </ul>
+  </div></div>
+
+  <div class="band soft"><div class="wrap">
+    <h2 class="sec">Volunteering</h2>
+    <div class="grid2">
+      <div class="card"><h3><a href="https://sites.google.com/view/wings-of-school/home">Wings of School</a></h3><p>A mobile, hybrid learning center for rural public schools in West Bengal, India. Piloted in Hingalganj, Sundarban, on 8 March 2022.</p></div>
+      <div class="card"><h3><a href="https://sites.google.com/view/save-our-saviours/home">Save our Saviours</a></h3><p>With the <a href="https://rotarybelur.org/">Rotary Club of Belur</a> and alumni of Presidency College and the Indian Statistical Institute, we provided personal protective equipment for public health workers in Howrah, India, in August 2020, supported by a global grant from the Rotary Foundation.</p></div>
+    </div>
+  </div></div>
+
+  <div class="band"><div class="wrap">
+    <h2 class="sec">Favorite quotes</h2>
+    <p class="quote">Sa Vidya Ya Vimuktaye. (That which sets your mind free is knowledge.)<span>Vishnu Purana</span></p>
+    <p class="quote">We would be better off if we spent more time in reading each others’ work and less in thinking up grand excuses for ignoring it.<span>Christopher Sims, “Macroeconomics and Methodology,” <i>Journal of Economic Perspectives</i>, 1996</span></p>
+    <p class="quote">Take your broken heart, make it into art.<span>Carrie Fisher</span></p>
+  </div></div>
+</section>
+
+<footer class="site"><div class="wrap">
+  <span>Personal website. Views are my own and do not reflect those of the Federal Reserve Board or the Federal Reserve System.</span>
+  <span><a href="mailto:chatterjee.econ@gmail.com">chatterjee.econ@gmail.com</a> · Last updated November 2026</span>
+</div></footer>
+
+<script>
+  function show(){
+    var id=(location.hash||'#home').slice(1);
+    if(!document.getElementById(id)) id='home';
+    document.querySelectorAll('section.page').forEach(function(s){s.classList.toggle('on',s.id===id)});
+    document.querySelectorAll('nav.tabs a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)});
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show); show();
+</script>
+</body>
+</html>
